@@ -1,0 +1,118 @@
+<!doctype html>
+
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NeuraCloud — Infraestrutura em Nuvem Acessível</title>
+  <meta name="description" content="NeuraCloud: máquinas virtuais com GPU, backup automático e integração com IA. Alto desempenho e preço justo para desenvolvedores e criadores." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    /* Reset simples */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#0f172a}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:32px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+    .logo{font-weight:700;font-size:20px;color:#0b84ff}
+    .nav a{margin-left:20px;font-weight:600;color:#334155}
+    .hero{display:grid;grid-template-columns:1fr;gap:24px;align-items:center;padding:48px 0}
+    .hero h1{font-size:32px;line-height:1.05;color:#061126}
+    .lead{color:#475569;margin-top:12px}
+    .cta{margin-top:18px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:10px;background:#0b84ff;color:white;font-weight:700}
+    .muted{color:#64748b;font-size:14px}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:32px}
+    .card{border:1px solid #e6eef8;padding:18px;border-radius:12px;background:white}
+    footer{margin-top:48px;padding:24px 0;border-top:1px solid #e6eef8;color:#64748b}
+    .grid-2{display:grid;grid-template-columns:1fr 360px;gap:32px}
+    @media(max-width:880px){.grid-2{grid-template-columns:1fr}.hero h1{font-size:28px}}
+    .contact-box{border-radius:12px;padding:18px;background:#f8fafc;border:1px solid #e6eef8}
+    label{display:block;font-size:13px;margin-top:12px;color:#334155}
+    input,textarea{width:100%;padding:10px;margin-top:8px;border-radius:8px;border:1px solid #dbeafe;background:white}
+    .small{font-size:13px;color:#64748b;margin-top:8px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">NeuraCloud</div>
+      <nav class="nav">
+        <a href="#features">Produtos</a>
+        <a href="#about">Sobre</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </header><main>
+  <section class="hero">
+    <div class="grid-2">
+      <div>
+        <h1>Máquinas virtuais com GPU — performance e preço justo para desenvolvedores e criadores</h1>
+        <p class="lead">Oferecemos VMs com GPU, backup automático e integrações com ferramentas de inteligência artificial. Simples de usar, escalável e acessível para quem precisa rodar workloads pesados.</p>
+        <div class="cta">
+          <a class="btn" href="#contact">Solicitar convite</a>
+          <p class="muted">Créditos e pré‑lançamento para early adopters.</p>
+        </div>
+
+        <div class="features" id="features">
+          <div class="card">
+            <strong>GPU dedicada</strong>
+            <p class="small">Acelere renderização, treine modelos e rode jogos/softwares pesados.</p>
+          </div>
+          <div class="card">
+            <strong>Backup automático</strong>
+            <p class="small">Restaure o ambiente do usuário rapidamente com snapshots e restore automático.</p>
+          </div>
+          <div class="card">
+            <strong>Pagamento flexível</strong>
+            <p class="small">Planos por hora ou assinatura mensal com preços competitivos.</p>
+          </div>
+          <div class="card">
+            <strong>Suporte e integração</strong>
+            <p class="small">APIs para gerenciamento e integração com serviços de IA.</p>
+          </div>
+        </div>
+      </div>
+
+      <aside id="contact">
+        <div class="contact-box">
+          <h3>Solicitar acesso antecipado</h3>
+          <p class="small">Preencha e retornaremos por e-mail.</p>
+          <form action="mailto:contato@neuracloud.com.br" method="post" enctype="text/plain">
+            <label>Nome</label>
+            <input type="text" name="Nome" placeholder="Seu nome" required />
+            <label>E-mail</label>
+            <input type="email" name="Email" placeholder="seu@seudominio.com" required />
+            <label>Organização / Usuário</label>
+            <input type="text" name="Organizacao" placeholder="Empresa ou uso pessoal" />
+            <label>Mensagem</label>
+            <textarea name="Mensagem" rows="4" placeholder="Conte brevemente sobre o uso desejado"></textarea>
+            <div style="margin-top:12px">
+              <button class="btn" type="submit">Enviar</button>
+            </div>
+            <p class="small" style="margin-top:12px">Ou envie diretamente para <strong>contato@neuracloud.com.br</strong></p>
+          </form>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="about" style="margin-top:40px">
+    <h2>Sobre a NeuraCloud</h2>
+    <p class="small" style="margin-top:12px">A NeuraCloud nasce para democratizar o acesso a infraestrutura de ponta. Estamos focados em facilidade de uso, suporte e preços justos para criadores, desenvolvedores e pequenas empresas que precisam de GPU na nuvem.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+    <div>
+      <strong>NeuraCloud</strong>
+      <div class="small">© " + new Date().getFullYear() + " NeuraCloud. Todos os direitos reservados.</div>
+    </div>
+    <div class="small">E-mail: contato@neuracloud.com.br • Endereço: Brasil</div>
+  </div>
+</footer>
+
+  </div>
+</body>
+</html>
